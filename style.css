@@ -1,27 +1,107 @@
-body {
-    margin: 0%;
-    width: 100%;
-    height: 100vh;
-    /* overflow: hidden; */
+* {
+
     box-sizing: border-box;
 }
 
-p {
+body {
+    margin: 0%;
+    width: 100%;
+    /* height: 100vh; */
+    /* overflow: hidden; */
+    font-family: 'Open Sans', sans-serif;
     color: white;
 }
+
+a {
+    text-decoration: none;
+}
+
+h1, h2{
+    margin: 0%;
+}
+
+li {
+    list-style: none;
+} 
+
+ p {
+    margin:0;
+}
+
+img {
+    width: 100%;
+}
+
+hr{
+    margin: 0%;
+
+}
+
+
 
 /* Téléphone */
 
 @media(max-width: 767px) {
 
-    .navbar {
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        padding: 10px;
-        display: flex;
-        align-items: left;
-        justify-content: left;
+    header{
+       min-height: 100vh;
+    }
+
+    #nav-mobile {
+        color: white !important;
+        background-color: #121618;
+        text-align: center;
+        padding: 30px;
+        position: relative;
+
+    }
+
+    #vincent2 {
+        width: 50%;
+    }
+
+    label {
+        position: absolute;
+        font-size: 2.5rem;
+        top: 75px;
+        transform: translateY(-50%);
+        right: 20px;
+        cursor: pointer;
+
+    }
+    
+    label [data-icon="akar-icons:cross"]
+    {
+        display: none;
+    }
+
+    #btn {
+        display: none;
+    }
+    .burger {
+        display: none;
+        list-style: none;
+        text-align: left !important;
+        color: white;
+    }
+
+    #btn:checked + .burger {
+        display: block;
+
+    }
+
+    #btn:checked + .burger + label [data-icon="akar-icons:cross"]{
+        display: inline;
+    }
+
+
+    #btn:checked + .burger + label [data-icon="ci:hamburger"]{
+        display: none;
+    }
+
+    .burger li a {
+        text-decoration: none;
+        color: white;
     }
 
     #nav-pc {
@@ -37,21 +117,115 @@ p {
         width: 100%;
         margin: 0%;
         color: white;
+    }
+
+    .slide {
+        background: url("images/slide_1.jpg") no-repeat center / cover;
+        text-align: center;
+        padding: 2rem;
+        height: calc(100vh - 150px);
+    }
+
+    #pizzapart1 {
+        width: 50%;
+    }
+
+    .partie1{
+        position: relative;
+    }
+
+    
+    .titreprinc {
+        color: white;
+        text-align: center;
+    }
+    
+    .descriptif {
+        width: 100%;
+        color: white;
+        text-align: center;
+    }
+
+    #mph{
+        margin: 0%;
+        padding: 5px;
+        border-bottom: solid 5px white;
+    }
+    
+    #book{
+        width: 100%;
+        padding: 5px;
+        border: solid 1px white;
+        color: white;
+        margin-right: 2px;
+    }
+
+    #vmenu{
+        width: 100%;
+        background-color: #ffc851;
+        border: solid 1px black;
+        padding: 5px;
+        margin-left: 2px;
+        color: black;
+    }
+
+    #gauche{
+        top: 50%;
+        left: -50%;
+        position: absolute;
+    }
+
+    #droite{
+        top: 50%;
+        position: absolute;
+    }
+    .sectionjaune {
+        background: url("images/back_2.png") no-repeat center / cover;
+        text-align: center;
+        color: black !important;
+        width: 100%;
+        margin: 0%;
+        padding: 5px;
+    }
+
+    .iconecentre{
+        width: 30%;
+    }
+
+    .section3{
+        text-align: center;
+        background-color: #121618;
+    }
+
+    .pizzas3{
+        width: 100%;
+    }
+
+    .pizzas{
+        width: 50%;
+    }
+
+    hr{
+        display: none;       
+    }
+
+    footer{
+        text-align: center;
+        background-color: #121618;
+    }
+    
+    #logofoot{
+        width: 50%;
+    }
+
+    .infos{
+
     }
 
 }
 
 @media(min-width: 768px) {
 
-    .navbar {
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        padding: 10px;
-        display: flex;
-        align-items: left;
-        justify-content: left;
-    }
 
     #nav-pc {
         display: none;
@@ -68,7 +242,7 @@ p {
         color: white;
     }
 
-    .centre1 {
+    .slide {
         background: url("images/slide1") no-repeat cover;
     }
 
@@ -105,8 +279,8 @@ p {
         color: white;
     }
 
-    .centre1 {
-        background-image: url("images/slide1");
+    .slide {
+        background: url("images/slide1") no-repeat cover;
     }
 
     hr {

@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js" defer></script>
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <title>Pizzéria</title>
@@ -14,96 +17,113 @@
 
 <body>
     <header>
-        <nav class="navbar" type="navigation">
-            <section id="nav-pc">
-                <div class="navgauche">
-                    <span class="iconify" data-icon="et:phone" style="color: white;"></span>
-                    <address class="infos">+1 215 456 15 15 8:00 <br>a m - 11:30 p m</address>
-                </div>
-                <div class="navcentre">
-                    <img id="vincent" src="images/logo.png" alt="Logo Vincent pizza">
-                    <p id="home" class="menunav">HOME</p>
-                    <p id="menu" class="menunav">MENU</p>
-                    <p id="features" class="menunav">FEATURES</p>
-                    <p id="about" class="menunav">ABOUT</p>
-                    <p id="blog" class="menunav">BLOG</p>
-                    <p id="shop" class="menunav">SHOP</p>
-                    <p id="contact" class="menunav">CONTACT</p>
-                </div>
-                <div class="navdroite">
-                    <p>$0.00</p>
-                    <p>0 items - View Cart</p>
-                    <span class="iconify" id="panier" data-icon="fontisto:shopping-basket" style="color: white;"></span>
-                </div>
-            </section>
-            <section id="nav-mobile">
-                <span class="fermer">×</span>
-                <a href="#">HOME ></a>
-                <a href="#">MENU ></a>
-                <a href="#">FEATURES ></a>
-                <a href="#">ABOUT ></a>
-                <a href="#">BLOG ></a>
-                <a href="#">SHOP ></a>
-                <a href="#">CONTACT ></a>
-            </section>
+        <nav class="navbar" id="nav-pc" type="navigation">
+            <div class="navgauche">
+                <span class="iconify" data-icon="et:phone" style="color: white;"></span>
+                <address class="infos">+1 215 456 15 15 8:00 <br>a m - 11:30 p m</address>
+            </div>
+            <div class="navcentre">
+                <img id="vincent" src="images/logo.png" alt="Logo Vincent pizza">
+                <ul>
+                    <li id="home" class="menunav">HOME</li>
+                    <li id="menu" class="menunav">MENU</li>
+                    <li id="features" class="menunav">FEATURES</li>
+                    <li id="about" class="menunav">ABOUT</li>
+                    <li id="blog" class="menunav">BLOG</li>
+                    <li id="shop" class="menunav">SHOP</li>
+                    <li id="contact" class="menunav">CONTACT</li>
+                </ul>
+            </div>
+            <div class="navdroite">
+                <p>$0.00</p>
+                <p>0 items - View Cart</p>
+                <span class="iconify" id="panier" data-icon="fontisto:shopping-basket" style="color: white;"></span>
+            </div>
+        </nav>
+        <nav id="nav-mobile">
+            <img id="vincent2" src="images/logo.png" alt="Logo Vincent pizza">
+            <input type="checkbox" id="btn">
+            <ul class="burger">
+                <li><a href="#">Home &gt;</a></li>
+                <li><a href="#">Menu &gt;</a></li>
+                <li><a href="#">Features &gt;</a></li>
+                <li><a href="#">About &gt;</a></li>
+                <li><a href="#">Blog &gt;</a></li>
+                <li><a href="#">Shop &gt;</a></li>
+                <li><a href="#">Contact &gt;</a></li>
+            </ul>
+            <label for="btn">
+                <i class="iconify" data-icon="ci:hamburger" style="color: #f8f8f8;" data-height="16"></i>
+                <i class="iconify" data-icon="akar-icons:cross" style="color: #f8f8f8;" data-height="16"></i>
+            </label>
         </nav>
         <section class="slide">
             <div class="partie1">
-                <h1>VINCENT PIZZA</h1>
-                <h2>MAKING PEOPLE HAPPY</h2>
-                <P>Italian Pizza With cherry Tomatoes and Green Basil</P>
+                <img id="pizzapart1" src="images/6-600x600.png" alt="image d'une pizza">
+                <h1 class="titreprinc">VINCENT PIZZA.</h1>
+                <span id="droite" class="iconify" data-icon="codicon:arrow-right" style="color: white;"></span>
+                <span id="gauche" class="iconify" data-icon="codicon:arrow-left" style="color: white;"></span>
+                <h2 id="mph" class="titreprinc">MAKING PEOPLE HAPPY</h2>
+                <P class="descriptif">Italian Pizza With cherry Tomatoes and Green Basil</P>
                 <a href="#" id="book">BOOK NOW &gt;</a>
                 <a href="#" id="vmenu">VIEW MENU &gt;</a>
-                <span class="iconify" data-icon="codicon:arrow-right" style="color: white;"></span>
-                <span class="iconify" data-icon="codicon:arrow-left" style="color: white;"></span>
-                <img src="images/6-600x600.png" alt="image d'une pizza">
             </div>
         </section>
     </header>
     <main>
         <section class="sectionjaune">
             <div class="partie2">
-                <img src="images/icon_1.png" alt="">
-                <h3>QUALITY FOODS</h3>
-                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis blanditiis iste quo quam. Sequi rem,
-                    et, ad eius neque obcaecati repudiandae assumenda ab error voluptas sit ipsum. Voluptatum, obcaecati
-                    qui?</P>
-                <img src="images/icon_2.png" alt="">
-                <h3>FASTEST DELIVERY</h3>
-                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis blanditiis iste quo quam. Sequi rem,
-                    et, ad eius neque obcaecati repudiandae assumenda ab error voluptas sit ipsum. Voluptatum, obcaecati
-                    qui?</P>
-                <img src="images/icon_3.png" alt="">
-                <h3>ORIGINAL RECIPES</h3>
-                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis blanditiis iste quo quam. Sequi rem,
-                    et, ad eius neque obcaecati repudiandae assumenda ab error voluptas sit ipsum. Voluptatum, obcaecati
-                    qui?</P>
+                <article>
+                    <img class="iconecentre" src="images/icon_1.png" alt="">
+                    <h2>QUALITY FOODS</h2>
+                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis blanditiis iste quo quam. Sequi
+                        rem,
+                        et, ad eius neque obcaecati repudiandae assumenda ab error voluptas sit ipsum. Voluptatum,
+                        obcaecati
+                        qui?</P>
+                </article>
+                <article>
+                    <img class="iconecentre" src="images/icon_2.png" alt="">
+                    <h2>FASTEST DELIVERY</h2>
+                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis blanditiis iste quo quam. Sequi
+                        rem,
+                        et, ad eius neque obcaecati repudiandae assumenda ab error voluptas sit ipsum. Voluptatum,
+                        obcaecati
+                        qui?</P>
+                </article>
+                <article>
+                    <img class="iconecentre" src="images/icon_3.png" alt="">
+                    <h2>ORIGINAL RECIPES</h2>
+                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis blanditiis iste quo quam. Sequi
+                        rem,
+                        et, ad eius neque obcaecati repudiandae assumenda ab error voluptas sit ipsum. Voluptatum,
+                        obcaecati
+                        qui?</P>
+                </article>
             </div>
         </section>
         <section class="section3">
             <h2>HOT SALES</h2>
             <div class="partie3">
-                <div class="pizza1">
-                    <img src="images/6-600x600.png" alt="photo pizza diablo">
+                <div class="pizzas3">
+                    <img class="pizzas" src="images/6-600x600.png" alt="photo pizza diablo">
                     <h3 class="diablo">DIABLO</h3>
                     <p>Classic marinara sauce, authentic old-world pepperoni, all-natural ita</p>
                     <p>$ 3.50</p>
-                </div>
-                <div class="pizza2">
-                    <img src="images/8-600x600.png" alt="photo pizza carbonara">
+
+
+                    <img class="pizzas" src="images/8-600x600.png" alt="photo pizza carbonara">
                     <h3 class="diablo">CARBONARA</h3>
                     <p>Classic marinara sauce, authentic old-world pepperoni, all-natural ita</p>
                     <p>$ 3.80</p>
-                </div>
-                <div class="pizza3">
-                    <img src="images/4-600x600.png" alt="photo pizza capricciosa">
+
+                    <img class="pizzas" src="images/4-600x600.png" alt="photo pizza capricciosa">
                     <h3 class="diablo">CAPRICCIOSA</h3>
                     <p>Classic marinara sauce, authentic old-world pepperoni, all-natural ita</p>
                     <p>$ 2.90</p>
-                </div>
-                <div class="pizza4">
-                    <img src="images/7-600x600.png" alt="photo pizza PROSCIUTTO">
-                    <h3 class="diablo">DIABLO</h3>
+
+                    <img class="pizzas" src="images/7-600x600.png" alt="photo pizza prosciutto">
+                    <h3 class="diablo">PROSCIUTTO</h3>
                     <p>Classic marinara sauce, authentic old-world pepperoni, all-natural ita</p>
                     <p>$ 3.50</p>
                 </div>
@@ -112,19 +132,19 @@
     </main>
     <hr>
     <footer class="pied">
-        <div class="logofoot">
-            <img src="images/logo_footer.png" alt="logo Vincent pizza">
-            <address class="infos">+1 215 456 15 15 8:00 <br>a m - 11:30 p m</address>
+        <div class="logofooter">
+            <img id="logofoot" src="images/logo_footer.png" alt="logo Vincent pizza">
+            <address class="infos">+1 215 456 15 15 <span id="horaire">8:00 a m - 11:30 p m</span></address>
         </div>
-        <div class="menunav">
-            <p>HOME</p>
-            <p>MENU</p>
-            <p>FEATURES</p>
-            <p>ABOUT</p>
-            <p>BLOG</p>
-            <p>SHOP</p>
-            <p>CONTACT</p>
-        </div>
+        <ul class="menunav">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
         <div class="logoreseaux">
             <span class="iconify" data-icon="bi:twitter" style="color: #f8f8f8;"></span>
             <span class="iconify" data-icon="bx:bxl-facebook" style="color: #f8f8f8;" data-height="16"></span>

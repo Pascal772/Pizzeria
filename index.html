@@ -19,12 +19,12 @@
     <header>
         <nav class="navbar" id="nav-pc" type="navigation">
             <div class="navgauche">
-                <span class="iconify" data-icon="et:phone" style="color: white;"></span>
-                <address class="infos">+1 215 456 15 15 8:00 <br>a m - 11:30 p m</address>
+                <span class="iconify" id="phone" data-icon="et:phone" style="color: white;"></span>
+                <address class="infos">+1 215 456 15 15 <br>8:00 a m - 11:30 p m </address>
             </div>
             <div class="navcentre">
                 <img id="vincent" src="images/logo.png" alt="Logo Vincent pizza">
-                <ul>
+                <ul class="navmenupc">
                     <li id="home" class="menunav">HOME</li>
                     <li id="menu" class="menunav">MENU</li>
                     <li id="features" class="menunav">FEATURES</li>
@@ -35,9 +35,14 @@
                 </ul>
             </div>
             <div class="navdroite">
-                <p>$0.00</p>
-                <p>0 items - View Cart</p>
-                <span class="iconify" id="panier" data-icon="fontisto:shopping-basket" style="color: white;"></span>
+                <div class="prixitems">
+                    <p id="prixpanier">$0.00</p>
+                    <p id="items">0 items - View Cart</p>
+                </div>
+                <div class="blockpanier">
+                    <span class="iconify" id="panier" data-icon="fontisto:shopping-basket" style="color: white;"></span>
+                    <span id="numero">0</span>
+                </div>
             </div>
         </nav>
         <nav id="nav-mobile">
@@ -58,12 +63,14 @@
             </label>
         </nav>
         <section class="slide">
-            <div class="partie1">
+            <div class="slidepartie1">
                 <img id="pizzapart1" src="images/6-600x600.png" alt="image d'une pizza">
+            </div>
+            <div class="slidepartie2">
                 <h1 class="titreprinc">VINCENT PIZZA.</h1>
                 <span id="droite" class="iconify" data-icon="codicon:arrow-right" style="color: white;"></span>
                 <span id="gauche" class="iconify" data-icon="codicon:arrow-left" style="color: white;"></span>
-                <h2 id="mph" class="titreprinc">MAKING PEOPLE HAPPY</h2>
+                <h2 id="mph">MAKING PEOPLE HAPPY</h2>
                 <P class="descriptif">Italian Pizza With cherry Tomatoes and Green Basil</P>
                 <a href="#" id="book">BOOK NOW &gt;</a>
                 <a href="#" id="vmenu">VIEW MENU &gt;</a>
@@ -106,26 +113,31 @@
             <h2>HOT SALES</h2>
             <div class="partie3">
                 <div class="pizzas3">
-                    <img class="pizzas" src="images/6-600x600.png" alt="photo pizza diablo">
-                    <h3 class="diablo">DIABLO</h3>
-                    <p>Classic marinara sauce, authentic old-world pepperoni, all-natural ita</p>
-                    <p>$ 3.50</p>
+                    <div>
+                        <img class="pizzas" src="images/6-600x600.png" alt="photo pizza diablo">
+                        <h3 class="diablo">DIABLO</h3>
+                        <p>Classic marinara sauce, authentic old-world pepperoni, all-natural ita</p>
+                        <p>$ 3.50</p>
+                    </div>
 
-
-                    <img class="pizzas" src="images/8-600x600.png" alt="photo pizza carbonara">
-                    <h3 class="diablo">CARBONARA</h3>
-                    <p>Classic marinara sauce, authentic old-world pepperoni, all-natural ita</p>
-                    <p>$ 3.80</p>
-
-                    <img class="pizzas" src="images/4-600x600.png" alt="photo pizza capricciosa">
-                    <h3 class="diablo">CAPRICCIOSA</h3>
-                    <p>Classic marinara sauce, authentic old-world pepperoni, all-natural ita</p>
-                    <p>$ 2.90</p>
-
-                    <img class="pizzas" src="images/7-600x600.png" alt="photo pizza prosciutto">
-                    <h3 class="diablo">PROSCIUTTO</h3>
-                    <p>Classic marinara sauce, authentic old-world pepperoni, all-natural ita</p>
-                    <p>$ 3.50</p>
+                    <div>
+                        <img class="pizzas" src="images/8-600x600.png" alt="photo pizza carbonara">
+                        <h3 class="diablo">CARBONARA</h3>
+                        <p>Classic marinara sauce, authentic old-world pepperoni, all-natural ita</p>
+                        <p>$ 3.80</p>
+                    </div>
+                    <div>
+                        <img class="pizzas" src="images/4-600x600.png" alt="photo pizza capricciosa">
+                        <h3 class="diablo">CAPRICCIOSA</h3>
+                        <p>Classic marinara sauce, authentic old-world pepperoni, all-natural ita</p>
+                        <p>$ 2.90</p>
+                    </div>
+                    <div>
+                        <img class="pizzas" src="images/7-600x600.png" alt="photo pizza prosciutto">
+                        <h3 class="diablo">PROSCIUTTO</h3>
+                        <p>Classic marinara sauce, authentic old-world pepperoni, all-natural ita</p>
+                        <p class="prix">$ 3.50</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -137,21 +149,22 @@
             <address class="infos">+1 215 456 15 15 <span id="horaire">8:00 a m - 11:30 p m</span></address>
         </div>
         <ul class="menunav">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">MENU</a></li>
-            <li><a href="#">FEATURES</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">SHOP</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li class="menufoot"><a href="#">HOME</a></li>
+            <li class="menufoot"><a href="#">MENU</a></li>
+            <li class="menufoot"><a href="#">FEATURES</a></li>
+            <li class="menufoot"><a href="#">ABOUT</a></li>
+            <li class="menufoot"><a href="#">BLOG</a></li>
+            <li class="menufoot"><a href="#">SHOP</a></li>
+            <li class="menufoot"><a href="#">CONTACT</a></li>
         </ul>
         <div class="logoreseaux">
-            <span class="iconify" data-icon="bi:twitter" style="color: #f8f8f8;"></span>
-            <span class="iconify" data-icon="bx:bxl-facebook" style="color: #f8f8f8;" data-height="16"></span>
-            <span class="iconify" data-icon="ant-design:instagram-outlined" style="color: #f8f8f8;"
-                data-height="16"></span>
+            <span class="iconify" id="socialmedia" data-icon="bi:twitter" style="color: #f8f8f8;" data-height=""></span>
+            <span class="iconify" id="socialmedia" data-icon="bx:bxl-facebook" style="color: #f8f8f8;"
+                data-height=""></span>
+            <span class="iconify" id="socialmedia" data-icon="ant-design:instagram-outlined" style="color: #f8f8f8;"
+                data-height=""></span>
         </div>
-        <p>Copyright &copy; 2018 Vincent. All Rights Reserved.</p>
+        <p class="mentions">Copyright &copy; 2018 Vincent. All Rights Reserved.</p>
     </footer>
 
 </body>

@@ -10,31 +10,37 @@ body {
     /* overflow: hidden; */
     font-family: 'Open Sans', sans-serif;
     color: white;
+    background-color: #121618;
+
 }
 
 a {
     text-decoration: none;
 }
 
-h1, h2{
+h1,
+h2 {
     margin: 0%;
 }
 
 li {
     list-style: none;
-} 
+}
 
- p {
-    margin:0;
+p {
+    margin: 0;
 }
 
 img {
     width: 100%;
 }
 
-hr{
+hr {
     margin: 0%;
+}
 
+address {
+    font-style: normal;
 }
 
 
@@ -43,8 +49,8 @@ hr{
 
 @media(max-width: 767px) {
 
-    header{
-       min-height: 100vh;
+    header {
+        min-height: 100vh;
     }
 
     #nav-mobile {
@@ -69,15 +75,15 @@ hr{
         cursor: pointer;
 
     }
-    
-    label [data-icon="akar-icons:cross"]
-    {
+
+    label [data-icon="akar-icons:cross"] {
         display: none;
     }
 
     #btn {
         display: none;
     }
+
     .burger {
         display: none;
         list-style: none;
@@ -85,17 +91,235 @@ hr{
         color: white;
     }
 
-    #btn:checked + .burger {
+    #btn:checked+.burger {
         display: block;
 
     }
 
-    #btn:checked + .burger + label [data-icon="akar-icons:cross"]{
+    #btn:checked+.burger+label [data-icon="akar-icons:cross"] {
         display: inline;
     }
 
 
-    #btn:checked + .burger + label [data-icon="ci:hamburger"]{
+    #btn:checked+.burger+label [data-icon="ci:hamburger"] {
+        display: none;
+    }
+
+    .burger li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #nav-pc {
+        display: none;
+    }
+
+    .iconify {
+        height: 50px;
+        /* width: 100%; */
+    }
+
+    .infos {
+        width: 100%;
+        margin: 0%;
+        color: white;
+    }
+
+    .slide {
+        background: url("images/slide_1.jpg") no-repeat center / cover;
+        text-align: center;
+        padding: 2rem;
+        height: calc(100vh - 150px);
+    }
+
+    #pizzapart1 {
+        width: 50%;
+    }
+
+    .partie1 {
+        position: relative;
+    }
+
+
+    .titreprinc {
+        color: white;
+        text-align: center;
+    }
+
+    .descriptif {
+        width: 100%;
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #mph {
+        margin: 0%;
+        padding: 5px;
+        border-bottom: solid 5px white;
+    }
+
+    #book {
+        width: 100%;
+        padding: 5px;
+        border: solid 1px white;
+        color: white;
+        margin-right: 2px;
+    }
+
+    #vmenu {
+        width: 100%;
+        background-color: #ffc851;
+        border: solid 1px black;
+        padding: 5px;
+        margin-left: 2px;
+        color: black;
+    }
+
+    #gauche {
+        top: 50%;
+        left: -50%;
+        position: absolute;
+    }
+
+    #droite {
+        top: 50%;
+        position: absolute;
+    }
+
+    .sectionjaune {
+        background: url("images/back_2.png") no-repeat center / cover;
+        text-align: center;
+        color: black !important;
+        width: 100%;
+        margin: 0%;
+        padding: 5px;
+    }
+
+    .iconecentre {
+        width: 30%;
+    }
+
+    .section3 {
+
+        text-align: center;
+        background: #121618 center;
+    }
+
+    .pizzas3 {
+        width: 100%;
+    }
+
+    .pizzas {
+        width: 50%;
+    }
+
+    .prix {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        padding: 15px;
+        text-align: center !important;
+        background-color: #121618;
+        color: white;
+    }
+
+    #logofoot {
+        margin: 25px;
+        width: 50%;
+    }
+
+    .menufoot {
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /* margin: 0px; */
+    }
+
+    .menufoot a {
+        color: white;
+    }
+
+    .logoreseaux {
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #socialmedia {
+        width: 20px !important;
+        height: 20px !important;
+
+    }
+
+    .mentions {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media(min-width: 768px) and (max-width: 1023) {
+
+
+    header {
+        min-height: 100vh;
+    }
+
+    #nav-mobile {
+        color: white !important;
+        background-color: #121618;
+        text-align: center;
+        padding: 30px;
+        position: relative;
+
+    }
+
+    #vincent2 {
+        width: 50%;
+    }
+
+    label {
+        position: absolute;
+        font-size: 2.5rem;
+        top: 75px;
+        transform: translateY(-50%);
+        right: 20px;
+        cursor: pointer;
+
+    }
+
+    label [data-icon="akar-icons:cross"] {
+        display: none;
+    }
+
+    #btn {
+        display: none;
+    }
+
+    .burger {
+        display: none;
+        list-style: none;
+        text-align: left !important;
+        color: white;
+    }
+
+    #btn:checked+.burger {
+        display: block;
+
+    }
+
+    #btn:checked+.burger+label [data-icon="akar-icons:cross"] {
+        display: inline;
+    }
+
+
+    #btn:checked+.burger+label [data-icon="ci:hamburger"] {
         display: none;
     }
 
@@ -130,29 +354,30 @@ hr{
         width: 50%;
     }
 
-    .partie1{
+    .partie1 {
         position: relative;
     }
 
-    
+
     .titreprinc {
         color: white;
         text-align: center;
     }
-    
+
     .descriptif {
         width: 100%;
         color: white;
         text-align: center;
+        margin-bottom: 20px;
     }
 
-    #mph{
+    #mph {
         margin: 0%;
         padding: 5px;
         border-bottom: solid 5px white;
     }
-    
-    #book{
+
+    #book {
         width: 100%;
         padding: 5px;
         border: solid 1px white;
@@ -160,7 +385,7 @@ hr{
         margin-right: 2px;
     }
 
-    #vmenu{
+    #vmenu {
         width: 100%;
         background-color: #ffc851;
         border: solid 1px black;
@@ -169,16 +394,17 @@ hr{
         color: black;
     }
 
-    #gauche{
+    #gauche {
         top: 50%;
         left: -50%;
         position: absolute;
     }
 
-    #droite{
+    #droite {
         top: 50%;
         position: absolute;
     }
+
     .sectionjaune {
         background: url("images/back_2.png") no-repeat center / cover;
         text-align: center;
@@ -188,108 +414,338 @@ hr{
         padding: 5px;
     }
 
-    .iconecentre{
+    .iconecentre {
         width: 30%;
     }
 
-    .section3{
+    .section3 {
+
         text-align: center;
-        background-color: #121618;
+        background: #121618 center;
     }
 
-    .pizzas3{
+    .pizzas3 {
         width: 100%;
     }
 
-    .pizzas{
+    .pizzas {
         width: 50%;
     }
 
-    hr{
-        display: none;       
+    .prix {
+        margin-bottom: 10px;
     }
 
-    footer{
+    footer {
+        padding: 10px;
         text-align: center;
         background-color: #121618;
+        color: white;
+    }
+
+    #logofoot {
+        margin: 25px;
+        width: 50%;
+    }
+
+    .menufoot {
+        display: inline;
+        margin: auto;
+    }
+
+    .menufoot a {
+        color: white;
+    }
+
+    .logoreseaux {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #socialmedia {
+        width: 20px !important;
+        height: 20px !important;
+
+    }
+
+    .mentions {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media(min-width: 1024px) {
+    :root {
+        font-size: 16px;
+    }
+
+    .iconify {
+        height: 50px;
+        width: 100%;
+    }
+
+    .infos {
+        width: 100%;
+        margin: 0%;
+        color: white;
+    }
+
+    .slide {
+        background: url("images/slide_1.jpg") no-repeat center / cover;
+        text-align: center;
+        padding: 2rem;
+        height: calc(100vh - 150px);
+    }
+
+    #pizzapart1 {
+        width: 50%;
+    }
+
+    .partie1 {
+        position: relative;
+    }
+
+    .descriptif {
+        width: 100%;
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #mph {
+        margin: 0%;
+        padding: 5px;
+        border-bottom: solid 5px white;
+    }
+
+    #book {
+        width: 100%;
+        padding: 5px;
+        border: solid 1px white;
+        color: white;
+        margin-right: 2px;
+    }
+
+    #vmenu {
+        width: 100%;
+        background-color: #ffc851;
+        border: solid 1px black;
+        padding: 5px;
+        margin-left: 2px;
+        color: black;
+    }
+
+    .mentions {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     
-    #logofoot{
+    
+    #nav-mobile {
+        display: none !important;
+    }
+    
+    #nav-pc {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .navgauche {
+        flex: 1;
+        display: flex;
+        justify-content: left
+    }
+    
+    #phone {
+        margin-right: -20px;
+    }
+    
+    .infos {
+        line-height: 2rem;
+        color: lightgrey;
+        font-size: .8rem;
+    }
+    
+    .infos::first-line {
+        color: white;
+        font-size: 1rem;
+    }
+    
+    .navcentre {
+        flex: 4;
+    }
+    
+    #vincent {
+        margin-top: 20px;
+        width: 200px;
+        
+    }
+    
+    .navmenupc {
+        padding: 0%;
+    }
+    
+    .menunav {
+        display: inline-block;
+        margin: 2px;
+    }
+    
+    .navdroite {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        line-height: 2rem;
+        
+    }
+    
+    .prixitems {
+        margin-right: 50px;
+    }
+    
+    .blockpanier {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #prixpanier {
+        color: white;
+        font-size: 1rem;
+    }
+    
+    #items {
+        color: lightgrey;
+        font-size: .8rem;
+    }
+    
+    #numero {
+        width: 100%;
+        color: black;
+        border: solid 1px;
+        border-radius: 50%;
+        background-color: yellow;
+    }
+    
+    .slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .titreprinc{
+        font-size: 3rem;
+    }
+
+    .slidepartie1{
+
+    }
+
+    .slidepartie2{
+        margin-right: 10%;
+        text-align: left;
+    }
+    
+    #pizzapart1 {
+        width: 500px;
+        
+    }
+    #gauche {
+        top: 55%;
+        left: -40%;
+        position: absolute;
+    }
+
+    #droite {
+        top: 55%;
+        right: -40%;
+        position: absolute;
+    }
+    
+    .sectionjaune {
+        
+        background: url("images/back_2.png") no-repeat center / cover;
+        color: black !important;
+        margin: 0%;
+        padding: 5px;
+    }
+    
+    .iconecentre {
+        width: 10%;
+    }
+    
+    .section3 {
+        
+        text-align: center;
+        background: #121618 center;
+    }
+    
+    .partie2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 17%;
+    }
+    
+    .pizzas3 {
+        width: 100%;
+    }
+    
+    .pizzas {
         width: 50%;
     }
-
-    .infos{
-
+    
+    .prix {
+        margin-bottom: 10px;
     }
-
-}
-
-@media(min-width: 768px) {
-
-
-    #nav-pc {
-        display: none;
+    
+    .pizzas3{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
     }
-
-    .iconify {
-        height: 50px;
-        width: 100%;
-    }
-
-    .infos {
-        width: 100%;
-        margin: 0%;
-        color: white;
-    }
-
-    .slide {
-        background: url("images/slide1") no-repeat cover;
-    }
-
-    hr {
-        color: lightgray;
-        margin: 0%;
-    }
-
-    .pied {
-        margin: 0%;
-        background-color: black;
-    }
-}
-
-@media(min-width: 1200px) {
-    .navbar {
-        width: 100%;
-        height: 100%;
-        background-color: black;
+    
+    footer {
         padding: 10px;
-        display: flex;
-        align-items: left;
-        justify-content: left;
-    }
-
-    .iconify {
-        height: 50px;
-        width: 100%;
-    }
-
-    .infos {
-        width: 100%;
-        margin: 0%;
+        text-align: center;
+        background-color: #121618;
         color: white;
     }
-
-    .slide {
-        background: url("images/slide1") no-repeat cover;
+    
+    #logofoot {
+        margin: 25px;
+        width: 10%;
     }
-
-    hr {
-        color: lightgray;
-        margin: 0%;
+    
+    .menufoot {
+        display: inline;
+        margin: auto;
     }
-
-    .pied {
-        margin: 0%;
-        background-color: black;
+    
+    .menufoot a {
+        color: white;
+        margin: 5px;
     }
+    
+    .logoreseaux {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #socialmedia {
+        width: 20px !important;
+        height: 20px !important;
+    
+    }
+    
 }
